@@ -23,7 +23,7 @@ function SignupPage() {
 
     try {
       const response = await axios.post(
-        "http://192.168.137.1:5000/api/auth/signup",
+        "https://ai-interview-coach-with-ats-analyzer.onrender.com/api/auth/signup",
         formData
       )
 

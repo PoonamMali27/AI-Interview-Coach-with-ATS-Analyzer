@@ -133,7 +133,7 @@ const handleResumeUpload = async (event) => {
     formData.append("role", selectedRole)
    formData.append("jobDescription", jobDescription)
 
-    const response = await fetch("http://192.168.137.1:5000/api/analyze-resume", {
+    const response = await fetch("https://ai-interview-coach-with-ats-analyzer.onrender.com/api/analyze-resume", {
       method: "POST",
       body: formData,
     })
@@ -172,7 +172,7 @@ const regenerateQuestions = async () => {
     formData.append("role", selectedRole)
     formData.append("jobDescription", jobDescription)
 
-    const response = await fetch("http://192.168.137.1:5000/api/analyze-resume", {
+    const response = await fetch("https://ai-interview-coach-with-ats-analyzer.onrender.com/api/analyze-resume", {
       method: "POST",
       body: formData,
     })
@@ -238,7 +238,7 @@ const analyzeAnswer = async () => {
 
   try {
     setIsAnalyzing(true)
-    const response = await fetch("http://192.168.137.1:5000/api/analyze-answer", {
+    const response = await fetch("https://ai-interview-coach-with-ats-analyzer.onrender.com/api/analyze-answer", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

@@ -165,7 +165,7 @@ function CodingInterviewPage() {
     setResult("Running test cases...")
 
     const response = await axios.post(
-      "http://192.168.137.1:5000/api/run-code",
+      "https://ai-interview-coach-with-ats-analyzer.onrender.com/api/run-code",
       {
         sourceCode: code,
         language,
